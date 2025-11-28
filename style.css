@@ -1,0 +1,93 @@
+body {
+    background: #f4f6f8;
+    font-family: Arial;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 230px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(180deg, #2f4858, #3e6c7a); /* biru calm */
+    padding-top: 60px;
+    transition: 0.3s;
+    box-shadow: 2px 0 15px rgba(0,0,0,0.15);
+}
+
+.sidebar .menu-item {
+    display: block;
+    padding: 12px 20px;
+    color: #eaf1f3;
+    text-decoration: none;
+}
+
+.sidebar .menu-item:hover,
+.sidebar .active {
+    background: rgba(255,255,255,0.15);
+    color: #ffffff;
+}
+
+/* =========================
+   SIDEBAR TOGGLE DESKTOP
+   ========================= */
+.sidebar.closed {
+    left: -230px;
+}
+
+/* CONTENT */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: 0.3s;
+    background: #fdfaf6; /* beige lembut */
+}
+
+.content.full {
+    margin-left: 0;
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+   ========================= */
+@media (max-width: 768px) {
+    .sidebar {
+        left: -250px;
+    }
+    .sidebar.show {
+        left: 0;
+    }
+    .content {
+        margin-left: 0;
+    }
+}
+
+/* ===============================
+   THEME MODERN ELEGANT
+   =============================== */
+
+/* Navbar */
+.bg-danger,
+.navbar.bg-danger {
+    background: linear-gradient(90deg, #4a90a4, #6bbf9c) !important;
+}
+
+/* Header tabel */
+.table thead th {
+    background: linear-gradient(90deg, #4a90a4, #6bbf9c) !important;
+    color: #ffffff !important;
+    border-color: #d0e4e8 !important;
+}
+
+.table-danger {
+    background-color: #e8f1f2 !important;
+    color: #2f4858;
+}
+
+/* Input & Search */
+.form-control {
+    border: 1px solid #cfd8dc;
+    background: #ffffff;
+    border-radius: 6px;
+}
